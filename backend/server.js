@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import authRoutes from './routes/authRoutes.js';
 import categoryRoutes from './routes/categoryRoutes.js';
 import transactionRoutes from './routes/transactionRoutes.js';
+import budgetRoutes from './routes/budgetRoutes.js';
+import dashboardRoutes from './routes/dashboardRoutes.js';
 
 dotenv.config();
 
@@ -21,6 +23,8 @@ app.get("/", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/transactions", transactionRoutes);
+app.use("/api/budgets", budgetRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
