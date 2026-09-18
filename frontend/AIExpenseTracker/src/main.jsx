@@ -8,7 +8,7 @@ import './index.css';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter basename="/ai-expense-tracker">
+        <BrowserRouter>
             <AuthProvider>
                 <Toaster position="top-right" toastOptions={{ style: { fontSize: '14px' } }} />
                 <App />
