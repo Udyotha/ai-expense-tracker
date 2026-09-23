@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A0B2E" />
+      <stop offset="50%" stop-color="#2B1055" />
+      <stop offset="100%" stop-color="#0F041C" />
+    </linearGradient>
+
+    <!-- Dollar Sign Solid Gradient -->
+    <linearGradient id="dollarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3D5FF" />
+      <stop offset="40%" stop-color="#C77DFF" />
+      <stop offset="100%" stop-color="#7B2CBF" />
+    </linearGradient>
+
+    <!-- AI Sparkle Gradient -->
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0AAFF" />
+    </linearGradient>
+
+    <!-- Subtle Glow Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="#5A189A" stroke-width="6" />
+
+  <!-- Background AI Circuit Lines -->
+  <g stroke="#9D4EDD" stroke-width="3" opacity="0.3" stroke-dasharray="6 6">
+    <line x1="100" y1="120" x2="200" y2="170" />
+    <line x1="410" y1="130" x2="310" y2="190" />
+    <line x1="100" y1="390" x2="210" y2="330" />
+    <line x1="410" y1="380" x2="300" y2="320" />
+  </g>
+
+  <!-- Neural Connection Nodes -->
+  <g fill="#E0AAFF" opacity="0.5">
+    <circle cx="100" cy="120" r="7" />
+    <circle cx="410" cy="130" r="8" />
+    <circle cx="100" cy="390" r="8" />
+    <circle cx="410" cy="380" r="7" />
+  </g>
+
+  <!-- Solid Filled Dollar Sign ($) -->
+  <g filter="url(#glow)">
+    <!-- Main Filled Dollar Body -->
+    <path d="M 295 185
+             C 295 160, 275 145, 256 145
+             C 230 145, 212 160, 212 180
+             C 212 200, 230 212, 260 222
+             L 278 228
+             C 320 242, 345 268, 345 310
+             C 345 362, 305 392, 256 395
+             L 256 430
+             L 216 430
+             L 216 392
+             C 175 385, 145 355, 142 312
+             L 194 312
+             C 198 335, 220 352, 256 352
+             C 285 352, 302 336, 302 312
+             C 302 290, 285 278, 250 266
+             L 232 260
+             C 192 246, 168 222, 168 182
+             C 168 135, 206 105, 256 102
+             L 256 70
+             L 296 70
+             L 296 104
+             C 335 112, 360 140, 362 185
+             Z" 
+          fill="url(#dollarGrad)" />
+
+    <!-- Continuous Central Vertical Through-Bar -->
+    <rect x="238" y="70" width="36" height="360" rx="6" fill="url(#dollarGrad)" opacity="0.95" />
+  </g>
+
+  <!-- Top-Right AI Sparkle -->
+  <path d="M 390 100 
+           Q 390 125, 415 125 
+           Q 390 125, 390 150 
+           Q 390 125, 365 125 
+           Q 390 125, 390 100 Z" 
+        fill="url(#sparkleGrad)" />
+
+  <!-- Bottom-Left AI Sparkle -->
+  <path d="M 125 360 
+           Q 125 375, 140 375 
+           Q 125 375, 125 390 
+           Q 125 375, 110 375 
+           Q 125 375, 125 360 Z" 
+        fill="url(#sparkleGrad)" opacity="0.85" />
+</svg>
