@@ -42,6 +42,14 @@ const Login = () => {
                         <h2 className="text-4xl font-bold text-slate-900 tracking-tight mb-2">Sign In</h2>
                         <p className="text-slate-500 mb-10">Please login to continue</p>
 
+                        <div className="bg-violet-50 border border-violet-200 rounded-2xl p-4 mb-6">
+                            <p className="text-xs font-semibold text-violet-700 mb-2">Demo account credentials:</p>
+                            <div className="space-y-1 text-xs text-slate-700">
+                                <p><span className="font-medium">Email:</span> udyotha@gmail.com</p>
+                                <p><span className="font-medium">Password:</span> Sankalpana@2323</p>
+                            </div>
+                        </div>
+
                         <form onSubmit={onSubmit} className="space-y-5">
                             <div className="space-y-2">
                                 <label className="text-sm font-semibold text-slate-700">Email</label>
