@@ -293,13 +293,11 @@ const AuthHero = ({ headline, subheadline }) => (
             >
                 <div className="flex-1 min-w-0">
                     <div style={{ animation: 'scrollUp 45s linear infinite' }}>
-                        {[...column1, ...column1, ...column2]
-                            .sort(() => Math.random() - 0.5)
-                            .map((card, i) => (
-                                <div key={i} className="pb-4">
-                                    {card}
-                                </div>
-                            ))}
+                        {[...column1, ...column1, ...column2].map((card, i) => (
+                            <div key={i} className="pb-4">
+                                {card}
+                            </div>
+                        ))}
                     </div>
                 </div>
 
@@ -315,13 +313,11 @@ const AuthHero = ({ headline, subheadline }) => (
 
                 <div className="flex-1 min-w-0">
                     <div style={{ animation: 'scrollUp 45s linear infinite' }}>
-                        {[...column1, ...column1, ...column2]
-                            .sort(() => Math.random() - 0.5)
-                            .map((card, i) => (
-                                <div key={i} className="pb-4">
-                                    {card}
-                                </div>
-                            ))}
+                        {[...column1, ...column1, ...column2].map((card, i) => (
+                            <div key={i} className="pb-4">
+                                {card}
+                            </div>
+                        ))}
                     </div>
                 </div>
 
